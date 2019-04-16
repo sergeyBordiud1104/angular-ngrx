@@ -1,0 +1,12 @@
+<!--<div>Current Count: {{ negative$ | async }}</div>-->
+<!--<div>Current Count: {{ positive$ | async }}</div>-->
+<div class="app-count">
+  <app-count [count]="negative$ | async"></app-count>
+  <app-count [count]="positive$ | async"></app-count>
+</div>
+
+<div class="start-app">
+  <button (click)="start()">Start</button>
+</div>
+
+<router-outlet></router-outlet>

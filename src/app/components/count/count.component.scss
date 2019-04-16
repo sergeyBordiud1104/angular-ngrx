@@ -1,0 +1,23 @@
+.negative {
+  color: #294482;
+  background-color: #caddff;
+}
+.zero {
+  color: #404040;
+  background-color: #c4c4c4;
+}
+.positive {
+  color: #C22D2D;
+  background-color: #ffced1;
+}
+div {
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 100px;
+  }
+}
