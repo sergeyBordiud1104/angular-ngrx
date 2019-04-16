@@ -13,8 +13,8 @@ import { interval } from 'rxjs';
 export class AppComponent {
   negative$: Observable<number>;
   positive$: Observable<number>;
-  
-  constructor(private store: Store<{ count: object}>) {
+    
+    constructor(private store: Store<{ count: { negative: number, positive: number }}>) {
     this.negative$ = store.select(state => state.count.negative);
     this.positive$ = store.select(state => state.count.positive);
   }

@@ -1,3 +1,3 @@
-<div [ngClass]="{'negative': count < 0, 'zero': count === 0, 'positive': count > 0}">
+<div [ngClass]="getCounterClass(value)">
   <span>{{count}}</span>
 </div>
